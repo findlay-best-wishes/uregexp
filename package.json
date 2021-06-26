@@ -1,0 +1,28 @@
+{
+  "name": "uregexp",
+  "version": "1.0.0",
+  "description": "基于正则表达式的字符串匹配工具",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "npx eslint lib test index.js --fix && npm run prettier",
+    "prettier": "npx prettier --write lib test index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ByteJitter/uregexp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ByteJitter/uregexp/issues"
+  },
+  "homepage": "https://github.com/ByteJitter/uregexp#readme",
+  "devDependencies": {
+    "eslint": "^7.29.0",
+    "eslint-plugin-node": "^11.1.0",
+    "jest": "^27.0.5",
+    "prettier": "2.3.2"
+  }
+}
