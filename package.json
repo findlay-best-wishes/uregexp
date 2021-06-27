@@ -1,12 +1,12 @@
 {
   "name": "uregexp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "基于正则表达式的字符串匹配工具",
   "main": "index.js",
   "scripts": {
     "test": "jest",
     "lint": "npx eslint lib test index.js --fix && npm run prettier",
-    "prettier": "npx prettier --write lib test index.js"
+    "prettier": "npx prettier --write lib test *"
   },
   "repository": {
     "type": "git",

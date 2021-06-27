@@ -3,14 +3,6 @@ const validators = require('../lib/validators');
 describe('validator_MpNum(arg)', () => {
   const validator_MpNum = validators.validator_MpNum;
 
-  test('arg = {}', () => {
-    expect(() => void validator_MpNum({})).toThrow();
-  });
-
-  test('arg = 20', () => {
-    expect(() => void validator_MpNum(10)).toThrow();
-  });
-
   let argToExpectToupleArray = [
     ['', false],
     ['string', false],
@@ -30,14 +22,6 @@ describe('validator_MpNum(arg)', () => {
 
 describe('validator_EmailAdr(arg)', () => {
   const validator_EmailAdr = validators.validator_EmailAdr;
-
-  test('arg = {}', () => {
-    expect(() => void validator_EmailAdr({})).toThrow();
-  });
-
-  test('arg = 20', () => {
-    expect(() => void validator_EmailAdr(10)).toThrow();
-  });
 
   const argToExpectToupleArray = [
     ['', false],
@@ -60,14 +44,6 @@ describe('validator_EmailAdr(arg)', () => {
 describe('validator_Username(arg)', () => {
   const validator_Username = validators.validator_Username;
 
-  test('arg = {}', () => {
-    expect(() => void validator_Username({})).toThrow();
-  });
-
-  test('arg = 20', () => {
-    expect(() => void validator_Username(10)).toThrow();
-  });
-
   const argToExpectToupleArray = [
     ['', false],
     ['gj199', false],
@@ -88,14 +64,6 @@ describe('validator_Username(arg)', () => {
 
 describe('validator_Password(arg)', () => {
   const validator_Password = validators.validator_Password;
-
-  test('arg = {}', () => {
-    expect(() => void validator_Password({})).toThrow();
-  });
-
-  test('arg = 20', () => {
-    expect(() => void validator_Password(10)).toThrow();
-  });
 
   const argToExpectToupleArray = [
     ['', false],
